@@ -15,7 +15,8 @@ void Time::read() {
 void Time::print() {
     cout<<setw(2)<<setfill('0')<<h<<':';
     cout<<setw(2)<<setfill('0')<<m<<':';
-    cout<<setw(2)<<setfill('0')<<s;
+    cout<<setw(2)<<setfill('0')<<s<<endl;
+    cout<<(h*3600+m*60+s);
 }
 int main() {
 	T.read();
